@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="Keywords" content="HTML, CSS, CIS 241, Final Project">
+        <meta name="Description" content="CIS 241 Final Project Home page">
+        <meta name="Author" content="Duc Nguyen">
+        <meta http-equiv="default-style" content="style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="follow">
+        <link rel="stylesheet" type="text/css" href="myStyle.css">
+        <title>Duc Nguyen GuestBook Page</title>
+    </head>
+    
+    <body style="background: rgba(91, 72, 82, 0.8)">
+        <div class="grid-container">
+            <!--Page navigation-->
+            <nav>
+                <h2>GuestBook</h2>
+                <ul class="menu">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="guestbook.html">GuestBook</a></li>
+                        <li><a href="interest.html">Interest</a></li>
+                        <li><a href="reflections.html">Reflection</a></li>
+                </ul>
+                <div class="toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+            <!--End page navigation-->
+            <div class="form-input">
+                <form>
+                        <fieldset>
+                            <h2>Contact me</h2>
+                            <label style="color: #45f3ff" for="name">Name</label>
+                            <input type="text" id="name" name="name" maxlength="20" placeholder="Jonh Wick" >
+
+                            <div class="radio-button">
+                                <h3>How do you find me?</h3>
+                                <input type="radio" id="surfed-in" name="found_me" value="Just Surfed In" checked>
+                                <label for="surfed-in">Just Surfed In</label>
+                                <br>
+
+                                <input type="radio" id="word" name="found_me" value="Word of mouth">
+                                <label for="word">Word of mouth</label>
+                                <br>
+
+                                <input type="radio" id="SEO" name="found_me" value="By search engine">
+                                <label for="SEO">By search engine</label>
+                                <br>
+                                
+                                <input type="radio" id="friend" name="found_me" value="A friend sent me">
+                                <label for="friend">A friend sent me</label>
+                            </div>
+
+                            <label style="color: #45f3ff" for="url">Website</label>
+                            <input type="text" id="url" name="url" value="http://">
+
+                            <label style="color: #45f3ff" for="comment">Comment</label>
+                            <textarea name="comment" id="comment" maxlength="200" placeholder="Maximum 200 characters"></textarea>
+
+                            <div class="button">
+                                <input type="submit">
+                                <input type="reset">
+                            </div>
+                        </fieldset>
+                </form>
+            </div>
+            
+            <!--Footer-->
+            <footer>
+                <a href="home.html">Home</a>|
+                <a href="resume.html">Resume</a>|
+                <a href="guestbook.html">GuestBook</a>|
+                <a href="interest.html">Interest</a>|
+                <a href="reflections.html">Reflection</a>
+           </footer>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
